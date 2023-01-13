@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Example</h1>
+    <hr />
+
+    <form action="/register">
+      <p>
+        <label>Enter Name : </label>
+        <input type="text" name="fname" placeholder="First name" required />
+      </p>
+      <p>
+        <label>Enter Email : </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+      </p>
+      <p>
+        <label>Enter Age : </label>
+        <input type="number" value="34" name="age" placeholder="12" required />
+      </p>
+
+      <div>
+        <label> Gender </label>
+        <div>
+          <label for="">Male</label>
+          <input value="M" name="gender" type="radio" name="" id="" />
+        </div>
+        <div>
+          <label for="">Female</label>
+          <input value="F" name="gender" type="radio" name="" id="" />
+        </div>
+      </div>
+
+      <p>
+        <input type="date" />
+      </p>
+      <p>
+        <input type="time" />
+      </p>
+
+      <p>
+        <input type="reset" />
+      </p>
+      <p>
+        <input
+          type="color"
+          onchange="document.body.style.backgroundColor = (this.value)"
+        />
+      </p>
+
+      <hr />
+      <div>
+        City :
+        <select name="city">
+          <option value="JBP">Jabalpur</option>
+          <option value="IND">Indore</option>
+          <option value="MUM">Mumbai</option>
+          <option value="BH">Bhopal</option>
+        </select>
+      </div>
+      <hr />
+      <div>
+        Number :
+        <select name="number" multiple>
+          <option value="1">Number 1</option>
+          <option value="2">Number 2</option>
+          <option value="3">Number 3</option>
+          <option value="4">Number 4</option>
+        </select>
+      </div>
+
+      <hr />
+      <div>
+        <label for="">Fav Color</label>
+        <br />
+        Red: <input type="checkbox" value="red" name="color" id="" />
+        <br />
+        Blue: <input type="checkbox" value="blue" name="color" id="" />
+        <br />
+        Green: <input type="checkbox" value="green" name="color" id="" />
+        <br />
+        Tomato : <input type="checkbox" value="tomato" name="color" id="" />
+      </div>
+
+      <input type="submit" value="Register User" />
+    </form>
+  </body>
+</html>
