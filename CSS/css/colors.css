@@ -1,0 +1,19 @@
+body {
+  /* background-color: seagreen; */
+  /* background-color: tomato; */
+
+  /* background-color: rgb(83, 18, 18); */
+
+  /* background-color: #ffffff; */
+  /* rgb(255, 255, 255) */
+
+  /* background-color: tomato;
+  background-color: rgb(255, 99, 71);
+  background-color: #ff6347;
+  background-color: rgba(255, 99, 71, 0.2);
+  background-color: rgb(255, 99, 71); */
+
+  background-color: hsla(60, 40%, 50%, 1);
+
+  color: rgb(148, 91, 91);
+}
