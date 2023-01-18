@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p {
+        text-align: center;
+      }
+      main {
+        display: flex;
+        height: 600px;
+        background-color: lightgreen;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+      }
+
+      div {
+        height: 50px;
+        width: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      div:nth-child(even) {
+        background-color: rgb(104, 165, 186);
+      }
+      div:nth-child(odd) {
+        background-color: lightcoral;
+      }
+
+      /* div:nth-child(3) {
+        flex-grow: 1;
+      }
+      div:nth-child(2) {
+        flex-grow: 2;
+      } */
+    </style>
+  </head>
+  <body>
+    <p>X -></p>
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </main>
+  </body>
+</html>

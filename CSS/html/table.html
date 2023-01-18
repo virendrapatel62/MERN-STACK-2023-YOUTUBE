@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      tbody {
+        counter-reset: sno 0;
+      }
+
+      .sn::after {
+        counter-increment: sno;
+        content: counter(sno);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: sans-serif;
+      }
+
+      th,
+      td {
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+        border: 1px solid rgb(200, 194, 194);
+      }
+
+      thead {
+        background-color: tomato;
+        color: white;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: rgb(246, 236, 235);
+      }
+
+      tbody tr:hover {
+        background-color: rgb(237, 233, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Sno</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Sandeeep</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Harsh</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td class="sn"></td>
+          <td>Virendra</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
