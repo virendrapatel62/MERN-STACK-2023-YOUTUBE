@@ -8,7 +8,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
   padding: 0px 10px;
   background-color: rgb(15, 89, 163);
 }
@@ -18,10 +17,57 @@ header {
 }
 
 .nav-item {
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
+  padding: 10px;
+}
+
+.icon {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    display: none;
+  }
+  .nav:first-child {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav:first-child .nav-item:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+  }
+
+  .responsive {
+    flex-direction: column;
+  }
+
+  .responsive .nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .responsive .nav-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 400px) {
+  .menu-icon {
+    display: none !important;
+  }
 }
