@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dark.css" />
+    <title>Document</title>
+    <style>
+      .my-row div {
+        background-color: rgb(199, 211, 108);
+        margin: 1px;
+      }
+
+      .row div {
+        height: 5rem;
+      }
+
+      #firstrow {
+        height: 15rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Grid</h1>
+      <hr />
+
+      <div id="firstrow" class="row border border-info">
+        <div class="col align-self-start bg-success border"></div>
+        <div class="col align-self-center bg-success border"></div>
+        <div class="col align-self-end bg-success border"></div>
+      </div>
+      <hr />
+      <div
+        id="firstrow"
+        class="row border border-info justify-content-center align-items-center"
+      >
+        <div class="col-3 bg-warning border-success border"></div>
+        <div class="col-1 bg-warning border-success border"></div>
+        <div class="col-3 bg-warning border-success border"></div>
+      </div>
+
+      <hr />
+      <div class="my-row row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </main>
+  </body>
+</html>

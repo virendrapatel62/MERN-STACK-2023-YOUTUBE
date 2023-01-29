@@ -1,0 +1,21 @@
+.text-white {
+  color: white;
+}
+
+.text-tomato {
+  color: tomato;
+}
+.text-dark {
+  color: black;
+}
+.text-blue {
+  color: dodgerblue;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+.bg-blue {
+  background-color: dodgerblue;
+}
