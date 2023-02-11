@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css" />
+    <script src="./bootstrap5/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <script>
+      let modal = null;
+
+      window.onload = () => {
+        modal = new bootstrap.Modal("#myModal");
+        console.log("Winfow loaded");
+      };
+
+      function openModal() {
+        // console.log(modal);
+        modal.show();
+      }
+    </script>
+  </head>
+  <body>
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Project</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <button onclick="openModal()" class="btn btn-success">"Open Model"</button>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      Launch demo modal
+    </button>
+
+    <div class="modal" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              dolores sit beatae veniam quod ipsam dicta corrupti commodi velit
+              animi optio accusantium laborum quisquam odio ducimus corporis
+              doloremque ea. Modi.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Template File</h1>
+    <hr />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+      illum doloribus aperiam dicta, dolorem possimus nihil exercitationem
+      facere ullam vel quas quis. Officia architecto, maiores dolor esse
+      voluptate fuga soluta.
+    </p>
+  </body>
+</html>
