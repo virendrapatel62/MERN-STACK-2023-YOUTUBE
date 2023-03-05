@@ -33,4 +33,16 @@ var phoneNumbers = {
   harsh: "87877878",
 };
 
-console.log(phoneNumbers);
+console.clear();
+
+const student = {
+  name: "Virnedra",
+  age: 23,
+};
+
+const st2 = student;
+
+console.log(student);
+st2.age = 90;
+
+console.log(student);
